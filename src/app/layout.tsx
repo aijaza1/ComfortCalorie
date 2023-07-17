@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Rubik } from "next/font/google";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["300"] });
+const poppins = Rubik({ subsets: ["latin"], weight: ["300"] });
 
 export const metadata: Metadata = {
   title: "Comfort Calorie",

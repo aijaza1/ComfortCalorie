@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Offer = () => {
   return (
-    <div id='offer' className='w-full h-screen bg-slate-100'>
+    <div id='offer' className='w-full h-screen bg-[#FFF3D8]'>
       <div className='max-w-[1240px] m-auto px-2 py-10 w-full'>
 
         <p className='text-center text-4xl lg:text-5xl tracking-wide uppercase mt-6 mb-6 text-[#FB8500]'>

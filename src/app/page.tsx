@@ -7,12 +7,32 @@ import Finder from "./components/finder";
 export default function Home() {
   return (
     <section className="w-full flex-center flex-col">
-      <div className="w-full h-screen flex flex-col items-center justify-center text-center">
-        <p className="text-black text-3xl lg:text-5xl">Welcome to</p>
+      <div
+        className="w-full h-screen flex flex-col items-center justify-center text-center"
+        style={{ position: "relative" }}
+      >
+        <video
+          autoPlay
+          muted
+          loop
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: -1,
+            opacity: 0.8,
+          }}
+        >
+          <source src="/video/waves.mp4" type="video/mp4" />
+        </video>
+        <p className="text-white text-3xl lg:text-5xl">Welcome to</p>
         <h1 className="text-[#FB8500] text-5xl lg:text-7xl font-extrabold">
           Comfort Calorie
         </h1>
-        <p className="text-black text-xl lg:text-2xl mt-8 italic">
+        <p className="text-white text-xl lg:text-2xl mt-8 italic">
           Achieve your fitness goals.
         </p>
 
