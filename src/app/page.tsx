@@ -15,6 +15,7 @@ export default function Home() {
           autoPlay
           muted
           loop
+          playsInline
           style={{
             position: "absolute",
             top: 0,
