@@ -28,11 +28,11 @@ export default function Home() {
         >
           <source src="/video/waves.mp4" type="video/mp4" />
         </video>
-        <p className="text-white text-3xl lg:text-5xl">Welcome to</p>
+        <p className="text-black text-3xl lg:text-5xl">Welcome to</p>
         <h1 className="text-[#FB8500] text-5xl lg:text-7xl font-extrabold">
           Comfort Calorie
         </h1>
-        <p className="text-white text-xl lg:text-2xl mt-8 italic">
+        <p className="text-black text-xl lg:text-2xl mt-8 italic">
           Achieve your fitness goals.
         </p>
 
