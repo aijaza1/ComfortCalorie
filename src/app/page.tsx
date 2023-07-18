@@ -6,7 +6,7 @@ import Finder from "./components/finder";
 
 export default function Home() {
   return (
-    <section className="w-full flex-center flex-col">
+    <section className="w-full flex-center flex-col max-w-screen">
       <div
         className="w-full h-screen flex flex-col items-center justify-center text-center"
         style={{ position: "relative" }}

@@ -137,11 +137,12 @@ const Finder = () => {
             ))}
 
             {chartVisible && result[0] && (
-              <div className='shadow-xl shadow-gray-400 rounded-xl p-4 h-full flex justify-center items-center'>
+              <div className='shadow-xl shadow-gray-400 rounded-xl p-4 h-full flex justify-center items-center content-center'>
                 <div className='w-full'>
                   <h3 className='text-2xl font-semibold text-center'>Calorie Breakdown</h3>
                   <h3 className='text-xl font-semibold text-center'>(%)</h3>
-                  <PieChart width={400} height={300}>
+                  <div className='flex items-center justify-center'>
+                  <PieChart width={300} height={280}>
                     <Pie
                       data={[
                         { name: 'Protein', value: Math.round((result[0].protein_g * 4) / result[0].calories * 100) },
@@ -151,8 +152,8 @@ const Finder = () => {
                       dataKey='value'
                       cx='50%'
                       cy='50%'
-                      innerRadius={80}
-                      outerRadius={100}
+                      innerRadius={"55%"}
+                      outerRadius={"70%"}
                       fill='#8884d8'
                       label
                     >
@@ -163,6 +164,7 @@ const Finder = () => {
                     <Tooltip />
                     <Legend align='center' />
                   </PieChart>
+                  </div>
                 </div>
               </div>
             )}
